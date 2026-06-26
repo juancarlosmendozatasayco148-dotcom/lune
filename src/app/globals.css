@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-playfair-display), ui-serif, georgia, serif;
+  --color-accent: #c4845d;
+  --color-accent-light: #e8d5c8;
+  --color-charcoal: #1a1a1a;
+  --color-warm: #faf8f5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-warm);
+  color: var(--color-charcoal);
+}

@@ -1,0 +1,93 @@
+export const site = {
+  name: "LUNE",
+  tagline: "Esencia en cada hilo",
+  description:
+    "Minimalismo atemporal. Ropa diseñada para quienes valoran la calidad, el silencio y la autenticidad.",
+}
+
+export const navLinks = [
+  { label: "Colección", href: "#collection" },
+  { label: "Esencia", href: "#features" },
+  { label: "Voces", href: "#testimonials" },
+]
+
+export const products = [
+  {
+    id: 1,
+    name: "Blazer Estructurado",
+    price: "$290",
+    category: "Otoño 2026",
+    image: "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=800&q=80",
+  },
+  {
+    id: 2,
+    name: "Camisa de Lino",
+    price: "$160",
+    category: "Clásicos",
+    image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&q=80",
+  },
+  {
+    id: 3,
+    name: "Pantalón Palazzo",
+    price: "$220",
+    category: "Otoño 2026",
+    image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&q=80",
+  },
+  {
+    id: 4,
+    name: "Vestido Silueta",
+    price: "$260",
+    category: "Nuevo",
+    image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80",
+  },
+]
+
+export const features = [
+  {
+    title: "Materiales Nobles",
+    description:
+      "Solo tejidos naturales seleccionados de las mejores casas textiles europeas.",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80",
+  },
+  {
+    title: "Confección Artesanal",
+    description:
+      "Cada prenda producida en pequeños lotes por artesanos con décadas de experiencia.",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+  },
+  {
+    title: "Diseño Atemporal",
+    description:
+      "Formas limpias que trascienden temporadas. Ropa que perdura en tu armario.",
+    image: "https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=600&q=80",
+  },
+]
+
+export const testimonials = [
+  {
+    name: "María G.",
+    text: "La calidad del lino es incomparable. Se nota que cada prenda está hecha con cuidado.",
+    role: "Cliente desde 2024",
+  },
+  {
+    name: "Carlos M.",
+    text: "Por fin encontré una marca que entiende el minimalismo sin ser aburrida. Impecable.",
+    role: "Cliente desde 2023",
+  },
+  {
+    name: "Ana S.",
+    text: "El blazer estructurado es la pieza más versátil que tengo. Lo uso para todo.",
+    role: "Cliente desde 2024",
+  },
+]
+
+export const marqueeItems = [
+  "ATEMPORAL",
+  "MINIMAL",
+  "ARTESANAL",
+  "AUTÉNTICO",
+  "SILENCIOSO",
+  "ESENCIAL",
+  "PURO",
+  "NATURAL",
+]
