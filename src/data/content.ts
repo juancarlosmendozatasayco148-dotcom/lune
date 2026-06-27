@@ -111,18 +111,36 @@ export const testimonials = [
     name: "María G.",
     text: "La calidad del lino es incomparable. Se nota que cada prenda está hecha con cuidado.",
     role: "Cliente desde 2024",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80",
   },
   {
     name: "Carlos M.",
     text: "Por fin encontré una marca que entiende el minimalismo sin ser aburrida. Impecable.",
     role: "Cliente desde 2023",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80",
   },
   {
     name: "Ana S.",
     text: "El blazer estructurado es la pieza más versátil que tengo. Lo uso para todo.",
     role: "Cliente desde 2024",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80",
+  },
+  {
+    name: "Elena R.",
+    text: "Cada colección supera a la anterior. La evolución de LUNE es constante y siempre fiel a su esencia.",
+    role: "Cliente desde 2022",
+    image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=200&q=80",
+  },
+  {
+    name: "Diego F.",
+    text: "La sastrería es impecable. Por fin una marca que entiende el fit y los materiales como debe ser.",
+    role: "Cliente desde 2023",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
   },
 ]
+
+export const testimonialImage =
+  "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=80"
 
 export const marqueeItems = [
   "ATEMPORAL",
