@@ -11,6 +11,11 @@ export const navLinks = [
   { label: "Voces", href: "#testimonials" },
 ]
 
+export const collectionTitle = "Piezas esenciales"
+export const collectionSub = "Otoño 2026"
+export const collectionDesc =
+  "Tejidos nobles, líneas limpias. Piezas pensadas para durar más allá de la temporada."
+
 export const products = [
   {
     id: 1,
@@ -18,6 +23,10 @@ export const products = [
     price: "$290",
     category: "Otoño 2026",
     image: "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=800&q=80",
+    hoverImage: "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=800&q=80",
+    colors: ["#1a1a1a", "#faf8f5", "#8a7a6a"],
+    rating: 4.8,
+    featured: true,
   },
   {
     id: 2,
@@ -25,6 +34,10 @@ export const products = [
     price: "$160",
     category: "Clásicos",
     image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800&q=80",
+    hoverImage: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=800&q=80",
+    colors: ["#f5f0eb", "#1a1a1a", "#c4b5a5"],
+    rating: 4.9,
+    featured: false,
   },
   {
     id: 3,
@@ -32,6 +45,10 @@ export const products = [
     price: "$220",
     category: "Otoño 2026",
     image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&q=80",
+    hoverImage: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&q=80",
+    colors: ["#1a1a1a", "#faf8f5"],
+    rating: 4.7,
+    featured: false,
   },
   {
     id: 4,
@@ -39,6 +56,10 @@ export const products = [
     price: "$260",
     category: "Nuevo",
     image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80",
+    hoverImage: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80",
+    colors: ["#1a1a1a", "#c4845d", "#f5f0eb"],
+    rating: 4.6,
+    featured: true,
   },
 ]
 
