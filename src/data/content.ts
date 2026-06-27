@@ -61,6 +61,28 @@ export const products = [
     rating: 4.6,
     featured: true,
   },
+  {
+    id: 5,
+    name: "Chaleco Térmico",
+    price: "$180",
+    category: "Nuevo",
+    image: "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=800&q=80",
+    hoverImage: "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=800&q=80",
+    colors: ["#1a1a1a", "#555544", "#f5f0eb"],
+    rating: 4.7,
+    featured: false,
+  },
+  {
+    id: 6,
+    name: "Abrigo Largo",
+    price: "$340",
+    category: "Otoño 2026",
+    image: "https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?w=800&q=80",
+    hoverImage: "https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?w=800&q=80",
+    colors: ["#1a1a1a", "#c4a882"],
+    rating: 4.9,
+    featured: true,
+  },
 ]
 
 export const features = [
