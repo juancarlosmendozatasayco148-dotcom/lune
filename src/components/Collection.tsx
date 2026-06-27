@@ -121,8 +121,8 @@ export default function Collection() {
           <ProductCard product={products[0]} i={0} span />
           <ProductCard product={products[1]} i={1} />
           <ProductCard product={products[4]} i={4} />
-          <ProductCard product={products[2]} i={2} />
           <ProductCard product={products[3]} i={3} span />
+          <ProductCard product={products[2]} i={2} />
           <ProductCard product={products[5]} i={5} />
         </div>
       </div>
