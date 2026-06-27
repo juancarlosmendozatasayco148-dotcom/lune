@@ -1,6 +1,6 @@
 "use client"
 
-import { motion, useScroll, useTransform } from "framer-motion"
+import { motion, useScroll, useTransform, useSpring } from "framer-motion"
 import { useRef } from "react"
 import { testimonials } from "@/data/content"
 
@@ -19,7 +19,10 @@ function TestimonialCard({
     target: ref,
     offset: ["start end", "center center"],
   })
-  const borderWidth = useTransform(scrollYProgress, [0, 0.5], ["0px", "4px"])
+  const borderWidth = useSpring(useTransform(scrollYProgress, [0, 0.6], ["0px", "4px"]), {
+    stiffness: 50,
+    damping: 25,
+  })
 
   return (
     <motion.blockquote

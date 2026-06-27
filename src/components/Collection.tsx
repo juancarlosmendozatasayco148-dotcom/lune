@@ -1,6 +1,6 @@
 "use client"
 
-import { motion, useScroll, useTransform } from "framer-motion"
+import { motion, useScroll, useTransform, useSpring } from "framer-motion"
 import { useRef } from "react"
 import { products } from "@/data/content"
 
@@ -10,8 +10,14 @@ function ProductCard({ product, i }: { product: typeof products[0]; i: number })
     target: ref,
     offset: ["start end", "end start"],
   })
-  const clipProgress = useTransform(scrollYProgress, [0, 0.4], [1, 0])
-  const y = useTransform(scrollYProgress, [0, 1], [40, -40])
+  const clipProgress = useSpring(useTransform(scrollYProgress, [0, 0.6], [1, 0]), {
+    stiffness: 60,
+    damping: 30,
+  })
+  const y = useSpring(useTransform(scrollYProgress, [0, 1], [20, -20]), {
+    stiffness: 70,
+    damping: 35,
+  })
 
   return (
     <motion.a

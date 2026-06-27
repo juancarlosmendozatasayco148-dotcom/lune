@@ -1,6 +1,6 @@
 "use client"
 
-import { motion, useScroll, useTransform } from "framer-motion"
+import { motion, useScroll, useTransform, useSpring } from "framer-motion"
 import { useRef } from "react"
 import { features } from "@/data/content"
 
@@ -16,8 +16,14 @@ function FeatureRow({
     target: ref,
     offset: ["start end", "center center"],
   })
-  const lineHeight = useTransform(scrollYProgress, [0, 0.6], ["0%", "100%"])
-  const clipX = useTransform(scrollYProgress, [0, 0.5], [0, 100])
+  const lineHeight = useSpring(useTransform(scrollYProgress, [0, 0.7], ["0%", "100%"]), {
+    stiffness: 50,
+    damping: 25,
+  })
+  const clipX = useSpring(useTransform(scrollYProgress, [0, 0.6], [0, 100]), {
+    stiffness: 55,
+    damping: 28,
+  })
 
   return (
     <motion.div
