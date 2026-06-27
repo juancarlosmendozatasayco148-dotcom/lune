@@ -112,16 +112,16 @@ export default function Hero() {
         transition={{ duration: 1.5, delay: 1.2 }}
         className="absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 lg:block"
       >
-        <div className="flex flex-col items-center gap-2">
-          <span className="text-[10px] tracking-[0.3em] text-white/25">
+        <motion.div
+          animate={{ y: [0, 8, 0], opacity: [0.5, 1, 0.5] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          className="flex flex-col items-center gap-2"
+        >
+          <span className="text-[10px] tracking-[0.3em] text-white/30">
             DESCUBRE
           </span>
-          <motion.div
-            animate={{ y: [0, 10, 0], opacity: [0.4, 1, 0.4] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="h-10 w-px bg-white/40"
-          />
-        </div>
+          <div className="h-10 w-px bg-white/40" />
+        </motion.div>
       </motion.div>
     </section>
   )
