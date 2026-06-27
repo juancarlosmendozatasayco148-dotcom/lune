@@ -90,19 +90,19 @@ export const features = [
     title: "Materiales Nobles",
     description:
       "Solo tejidos naturales seleccionados de las mejores casas textiles europeas.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&q=80",
   },
   {
     title: "Confección Artesanal",
     description:
       "Cada prenda producida en pequeños lotes por artesanos con décadas de experiencia.",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
   },
   {
     title: "Diseño Atemporal",
     description:
       "Formas limpias que trascienden temporadas. Ropa que perdura en tu armario.",
-    image: "https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=800&q=80",
   },
 ]
 
