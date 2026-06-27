@@ -33,6 +33,9 @@ export default function RootLayout({
       lang="es"
       className={`${inter.variable} ${playfair.variable}`}
     >
+      <head>
+        <link rel="preconnect" href="https://images.unsplash.com" />
+      </head>
       <body className="min-h-screen font-sans antialiased">{children}</body>
     </html>
   )

@@ -60,7 +60,7 @@ export default function Header() {
 
         {/* Mobile hamburger */}
         <button
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => setIsOpen((prev) => !prev)}
           className="relative h-6 w-6 md:hidden"
           aria-label="Menú"
         >
