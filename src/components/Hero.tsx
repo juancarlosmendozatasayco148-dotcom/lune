@@ -117,9 +117,9 @@ export default function Hero() {
             DESCUBRE
           </span>
           <motion.div
-            animate={{ y: [0, 6, 0] }}
-            transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
-            className="h-8 w-px bg-white/25"
+            animate={{ y: [0, 10, 0], opacity: [0.4, 1, 0.4] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            className="h-10 w-px bg-white/40"
           />
         </div>
       </motion.div>
