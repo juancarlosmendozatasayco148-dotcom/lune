@@ -116,7 +116,11 @@ export default function Hero() {
           <span className="text-[10px] tracking-[0.3em] text-white/25">
             DESCUBRE
           </span>
-          <div className="h-8 w-px bg-white/15" />
+          <motion.div
+            animate={{ y: [0, 6, 0] }}
+            transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
+            className="h-8 w-px bg-white/25"
+          />
         </div>
       </motion.div>
     </section>
