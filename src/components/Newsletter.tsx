@@ -18,20 +18,20 @@ export default function Newsletter() {
       <motion.div
         animate={{ rotate: 360 }}
         transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-        className="pointer-events-none absolute -right-32 -top-32 h-80 w-80 rounded-full border border-white/5"
+        className="pointer-events-none absolute -right-32 -top-32 h-80 w-80 rounded-full border border-white/10"
       />
       <motion.div
         animate={{ rotate: -360 }}
         transition={{ duration: 80, repeat: Infinity, ease: "linear" }}
-        className="pointer-events-none absolute -bottom-40 -left-40 h-96 w-96 rounded-full border border-white/5"
+        className="pointer-events-none absolute -bottom-40 -left-40 h-96 w-96 rounded-full border border-white/10"
       />
 
       <div className="relative mx-auto max-w-2xl text-center">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, ease: [0.25, 0.1, 0, 1] as const }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <p className="mb-4 text-sm tracking-[0.3em] text-white/30">
             MANTENTE AL TANTO
@@ -60,21 +60,17 @@ export default function Newsletter() {
           </motion.div>
         ) : (
           <motion.form
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{
-              duration: 0.6,
-              delay: 0.15,
-              ease: [0.25, 0.1, 0, 1] as const,
-            }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
             onSubmit={handleSubmit}
             className="mx-auto flex max-w-md gap-3"
           >
             <input
               type="email"
               placeholder="tu@email.com"
-              className="flex-1 border-b border-white/20 bg-transparent px-2 py-3 text-sm text-white placeholder:text-white/30 transition-all duration-300 focus:border-accent focus:outline-none focus:shadow-[0_1px_0_0_#c4845d]"
+              className="flex-1 border-b border-white/20 bg-transparent px-2 py-3 text-sm text-white placeholder:text-white/30 transition-all duration-300 focus:border-accent focus:outline-none"
               required
             />
             <button
@@ -82,11 +78,6 @@ export default function Newsletter() {
               className="relative overflow-hidden whitespace-nowrap rounded-full bg-white px-8 py-3 text-sm font-medium tracking-wider text-charcoal transition-all hover:bg-white/90"
             >
               Suscribirse
-              <motion.span
-                className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent"
-                whileHover={{ x: "200%" }}
-                transition={{ duration: 0.6 }}
-              />
             </button>
           </motion.form>
         )}

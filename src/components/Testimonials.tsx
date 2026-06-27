@@ -1,7 +1,6 @@
 "use client"
 
-import { motion, useScroll, useTransform, useSpring } from "framer-motion"
-import { useRef } from "react"
+import { motion } from "framer-motion"
 import { testimonials } from "@/data/content"
 
 const initials = ["MG", "CM", "AS"]
@@ -14,34 +13,20 @@ function TestimonialCard({
   t: (typeof testimonials)[0]
   i: number
 }) {
-  const ref = useRef(null)
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "center center"],
-  })
-  const borderWidth = useSpring(useTransform(scrollYProgress, [0, 0.6], ["0px", "4px"]), {
-    stiffness: 50,
-    damping: 25,
-  })
-
   return (
     <motion.blockquote
-      ref={ref}
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
+      viewport={{ once: true, margin: "-40px" }}
       transition={{
-        duration: 0.6,
-        delay: i * 0.12,
-        ease: [0.25, 0.1, 0, 1] as const,
+        duration: 0.5,
+        delay: i * 0.1,
+        ease: "easeOut",
       }}
-      whileHover={{ y: -4, boxShadow: "0 20px 40px rgba(0,0,0,0.06)" }}
-      className="relative flex flex-col border border-charcoal/10 bg-white p-10 transition-shadow duration-300"
+      whileHover={{ y: -3, transition: { duration: 0.2 } }}
+      className="relative flex flex-col border border-charcoal/10 bg-white p-10 transition-shadow duration-300 hover:shadow-lg"
     >
-      <motion.div
-        style={{ width: borderWidth }}
-        className="absolute left-0 top-0 bottom-0 bg-accent"
-      />
+      <div className="absolute left-0 top-0 bottom-0 w-1 bg-accent" />
 
       <span className="absolute right-6 top-4 font-display text-7xl leading-none text-charcoal/5">
         &ldquo;
@@ -85,10 +70,10 @@ export default function Testimonials() {
     <section id="testimonials" className="bg-warm px-6 py-32 lg:px-12">
       <div className="mx-auto max-w-7xl">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, ease: [0.25, 0.1, 0, 1] as const }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
           className="mb-16"
         >
           <p className="mb-4 text-sm tracking-[0.3em] text-charcoal/40">VOCES</p>
